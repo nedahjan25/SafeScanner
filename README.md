@@ -1,0 +1,26 @@
+# URL Detection Project
+This project aims to detect malicious URLs using machine learning. It includes components for data preprocessing, model training, and a Flask-based real-time URL detection server.
+
+## Installation
+1. Set up a virtual environment:
+   `bash
+   python -m venv url_ml_env
+   source url_ml_env/bin/activate  #linux
+
+2. Install required packages:
+
+    pip install -r requirements.txt
+
+## Running the Project
+1. Preprocess Data: Run the data preprocessing script to prepare the data for model training.
+
+    python data_preprocessing.py
+
+2. Train the Model: Train the model with the preprocessed data and evaluate its performance.
+    
+    python train_model.py
+
+3. Run the Flask Server: Start the Flask server to detect URLs in real-time.
+
+    python url_detection.py
+
