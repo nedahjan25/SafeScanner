@@ -4,8 +4,8 @@ This project aims to detect malicious URLs using machine learning. It includes c
 ## Installation
 1. Set up a virtual environment:
    `bash
-   python -m venv url_ml_env
-   source url_ml_env/bin/activate  #linux
+   python -m venv .venv
+   source .venv/bin/activate  #linux
 
 2. Install required packages:
 
