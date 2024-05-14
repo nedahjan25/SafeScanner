@@ -24,3 +24,9 @@ This project aims to detect malicious URLs using machine learning. It includes c
 
     python url_detection.py
 
+## Using the QR Code Scanner
+Open the application in your web browser.
+Allow access to your device's camera or webcam when prompted.
+Position the QR code within the scanner area until it is detected.
+Once the QR code is detected, the application will analyze its content and provide feedback.
+
