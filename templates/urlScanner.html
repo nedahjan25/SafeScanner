@@ -1,46 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="urlScanner.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL Features and Malicious Detection</title>
+  <title>SAFE SCANNER WEB APP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="{{ url_for('static', filename='css/urlScanner.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    
+
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-	<nav class="navbar navbar-default navbar-fixed-top">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>                        
-		  </button>
-	
-		</div>
-		
-		<div class="collapse navbar-collapse" id="myNavbar">
-		  <ul class="nav navbar-nav navbar-fixed-top">
-			<a class="navbar-brand" href="/index.html"> <img src="QR_Logo.png" style="width:110px;height:70px;"> </a>
-            <li><a href="/index.html">HOME</a></li>
-			<li><a href="/qrScanner.html">QR CODE SCANNER</a></li>
-			<li><a href="/urlScanner.html">URL DETECTION </a></li>
-			<li><a href="#services">SERVICES</a></li>
-			<li><a href="#contact">CONTACT</a></li>
-		  </ul>
-		</div>
-	  </div>
-	</nav>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-fixed-top">
+          <a class="navbar-brand" href="#myPage"> 
+          <img src="{{ url_for('static', filename='css/QR_Logo.png') }}" height="70px" width="110px" />
+          <li><a href="{{ url_for('index') }}">HOME</a></li>
+          <li><a href="{{ url_for('qrScanner') }}">QR CODE SCANNER</a></li>
+          <li><a href="{{ url_for('urlScanner') }}">URL DETECTION</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 	
 	<div class="jumbotron text-center" style=" padding: 100px 25px; background-color: #00A18C;" >

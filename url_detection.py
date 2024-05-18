@@ -18,13 +18,13 @@ def index():
 
 # Route to the about page
 @app.route("/qrScanner")
-def about():
+def qrScanner():
     return render_template("qrScanner.html")
     
 
 # Endpoint to serve the HTML file
-@app.route("/")
-def home():
+@app.route("/urlScanner")
+def urlScanner():
     return send_file("urlScanner.html") # Serve the HTML file
 
 # Endpoint for URL detection

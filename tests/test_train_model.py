@@ -18,7 +18,7 @@ class TestTrainModel(unittest.TestCase):
 
         df = pd.DataFrame(data)
         
-        # Split into training and testing sets
+        # Split into training and testing              
         X_train, X_test, y_train, y_test = train_test_split(
             df.drop("label", axis=1), 
             df["label"], 
@@ -36,6 +36,6 @@ class TestTrainModel(unittest.TestCase):
         model.fit(X_train_scaled, y_train)
         
         # Test if the model predicts without errors
-        predictions = model.predict(X_test_scaled)
+        predictions = model.predict(X_test_scaled) 
         
         self.assertEqual(len(predictions), len(y_test))
