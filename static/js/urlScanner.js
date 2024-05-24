@@ -63,7 +63,7 @@ function checkIfMalicious(url) {
     const probability = 1 / (1 + Math.exp(-score));
 
     // Malicious threshold (e.g., 0.5 indicates 50% chance)                  
-    const threshold = 0.5;
+    const threshold = 0.9;
 
     return probability >= threshold;
 }

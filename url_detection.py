@@ -25,7 +25,7 @@ def qrScanner():
 # Endpoint to serve the HTML file
 @app.route("/urlScanner")
 def urlScanner():
-    return send_file("urlScanner.html") # Serve the HTML file
+    return render_template("urlScanner.html") # Serve the HTML file
 
 # Endpoint for URL detection
 @app.route("/detect", methods=["POST"])

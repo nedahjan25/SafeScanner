@@ -6,12 +6,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="{{ url_for('static', filename='css/urlScanner.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/qrScanner.css') }}" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+  
 
 
 </head>
@@ -30,7 +31,7 @@
     
     <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-fixed-top">
-          <a class="navbar-brand" href="#myPage"> 
+          <a class="navbar-brand" href="{{ url_for('index') }}"> 
           <img src="{{ url_for('static', filename='css/QR_Logo.png') }}" height="70px" width="110px" />
           <li><a href="{{ url_for('index') }}">HOME</a></li>
           <li><a href="{{ url_for('qrScanner') }}">QR CODE SCANNER</a></li>
